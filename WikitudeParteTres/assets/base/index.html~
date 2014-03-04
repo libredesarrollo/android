@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+.clase{
+
+width:500px;
+height:500px;
+background:#AF0;
+</style>
+
+	<title></title>
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+
+	<script src="architect://architect.js"></script>
+	<script type="text/javascript" src="js/ade.js"></script>
+       
+
+</head>
+
+<body>
+
+	<script type="text/javascript" src="js/ra.js"></script>
+
+</body>
+
+</html>
