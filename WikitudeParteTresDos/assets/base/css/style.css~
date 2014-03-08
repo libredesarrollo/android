@@ -1,0 +1,16 @@
+pre {
+	font-size:42px;
+	color:#FFF;
+	text-align: justify;
+}
+.descripcion{
+        font-size:42px;
+	color:#FFF;
+	background: #068;
+	border: 10px solid #059;
+	border-radius: 5px;
+	padding: 5px;
+	height: auto;
+
+}
+
