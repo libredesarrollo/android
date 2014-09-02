@@ -1,0 +1,46 @@
+package com.example.adapters;
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.widget.ListView;
+
+public class MainActivity extends Activity {
+
+	ListView listView;
+	ListAdapter listAdapter;
+	ArrayList<String> mensajes;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		// *** referencia los layout
+		listView = (ListView) findViewById(R.id.listview);
+
+		// creamos nuestra coleccion de datos
+		mensajes = new ArrayList<String>();
+		mensajes.add("uno");
+		mensajes.add("dos");
+		mensajes.add("tres");
+		mensajes.add("cuatro");
+		mensajes.add("cinco");
+
+		// creamos el listado
+		listAdapter = new ListAdapter(this, mensajes);
+
+		// establecemos el adaptador en la lista
+		listView.setAdapter(listAdapter);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+}
